@@ -333,6 +333,18 @@ button .submit:hover {
     background-color: #0022AA;
 }
 
+.login {
+    display: inline-block;
+    flex-direction: column;
+    width: 80vw;
+    margin: 5% 10% 5% 10%;
+    border: solid 1px #666;
+    border-radius: 15px;
+    max-width: 500px;
+    color: #000;
+}
+
+
 main {
     width: 90%;
     display: block;
