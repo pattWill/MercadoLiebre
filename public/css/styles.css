@@ -205,6 +205,7 @@ footer {
 
 .footer-copy {
     margin: 15px;
+    align-items: center;
 }
 
 footer section h4 {
@@ -463,4 +464,13 @@ main section article .main-article{
     #footer-icon:hover {
         color: #EAC926;
     }
+
+    .footer-contenedor,
+.footer-copy {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
 }
