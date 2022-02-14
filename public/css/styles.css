@@ -1,6 +1,8 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
+       
 }
 
 body{
@@ -17,14 +19,23 @@ p{
 }
 div.top-header{
     padding: 5%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+
 }
 
 header{
     background-color: #EAC926;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
 header div.logo{
-    width: 50%;
+    width: 45%;
+    display: flex;
 }
 
 header div.logo{
@@ -32,16 +43,30 @@ header div.logo{
 }
 header nav{
     font-size: 12px;
+    margin-left: 5%;
+    display: none;
 }
-
 header ul li{
     list-style-type: none;
 }
+
 
 header ul li a{
     text-decoration: none;
     color: #000;
 }
+
+header ul li a:hover {
+    color: #0022AA;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+}
+
+
 
 header .form .input{
     background-color: #FFF;
@@ -49,13 +74,29 @@ header .form .input{
     outline: none;
     color: #666;
     padding: 2px;
+    width: 50%;
+    font-size: 10px;
+
+
 }
 header .form .submit{
     background-color: #FFF;
     border: 1px solid #000;
     color: #666;
-    width: 10%;
+    width: 5%;
+    font-size: 10px;
 }
+
+
+header div.top-header input {
+    width: 100%;
+    border-radius: 15px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    margin: 10px;
+}
+
 
 header div.top-header p{
     width: 100%;
@@ -84,8 +125,12 @@ article div.main-article{
 
 .price{
     font-size: 18px;
+    width: 30%;
 }
 
+.discount{
+    width: 70%;
+}
 .discount,
 .description{
     font-size: 16px;
@@ -119,13 +164,173 @@ main section article i,
 }
 
 
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);  
+    
+}
+
+main section article i:hover {
+    transform: rotateZ(-90deg);
+    transition: all 450ms;
+}
+
 .articleFooter {
     text-align:center;
 }
 
-.IconoFooter {
-    font-size: 3em;
+
+footer {
+    margin: 35px;
+}
+
+.footer-contenedor,
+.footer-copy {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+.footer-copy {
+    margin: 15px;
+}
+
+footer section h4 {
+    margin: 5px;
+}
+
+.footer-contenedor #IconoFooter {
+    font-size: 2em;
     margin-bottom: 10px;
+    color: #1259c3;
+    transition-duration: 450ms;
+}
+
+footer p {
+    text-align: center;
+}
+
+/*######Register formulario######*/
+
+
+.register {
+    flex-direction: column;
+    width: 80vw;
+    margin: 5% 10% 5% 10%;
+    border-radius: 5px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #1259c3;;
+    max-width: 800px;
+}
+
+.register-form input:focus,
+.login-form input:focus,
+.form input:focus { 
+    outline: none !important;
+    border-color: #1259c3;
+    
+}
+
+.register .rememberme{
+    text-align: center;
+    padding-top: 5px;
+}
+.texto-registro {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 5% 10% 5% 10%;
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+
+.register-form input {
+    border-radius: 6px;
+    padding: 6px;
+    width: 80%;
+    border: solid 1px #666;
+    margin: 10px 0px 10px 0px;
+}
+
+
+.register-form .enviar-cancelar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+button .enviarbtn, .cancelbtn:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #1259c3;
+    color: white;
+}
+
+.register-form .enviar-cancelar-button .enviarbtn{
+  margin-right: 10px;
+}
+
+div.profile-selector, .interests-selector {
+    margin: 10px 0px 10px 0px;
+}
+
+input[type=radio], input[type=checkbox] {
+    width: 5%;
+    margin: 5px 0px 0px 0px;
+}
+
+input[type=file] {
+    background-color: #FFF;
+}
+
+
+
+div.register-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 10px 0px 10px 0px;
+}
+
+button .submit {
+    display: flex;
+    width: 40%;
+    padding: 10px;
+    justify-content: center;
+    background-color: #39b54a;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition-duration: 450ms;    
+}
+
+button .submit:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #0022AA;
 }
 
 main {
@@ -139,36 +344,111 @@ main section .product {
 }
 
 main section article .main-article{
-    border-top: solid 1px #ebebeb;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
     padding: 15px;
-}
-
-@media (min-width: 361px)
-{ .description
-    {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    
-}
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 
 }
+@media (min-width: 361px){
 
-@media (min-width: 460px) { 
-Html body header div.burger-menu i 
-{ 
-    display: none;
+    main section article{
+        width: 48%;
+        transition-duration: 400ms;
+    }
 
-     }
-}
+    main section article .description{
+        display: block;
+    }
 
-@media (min-width: 769px){
-    
-}
+    main section article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);    
+    }
 
-* { box-sizing: border-box;  }
+    main section div.products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
 
-@media (max-width: 460px){
-    .description, Html body header nav ul li
-    {
+    header nav {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 90vw;
+        justify-content: space-between;
+    }
+
+    header ul li {
+        display: inline;
+        padding: 10px;
+    }
+
+    div.burger-menu {
         display: none;
+    }
+
+    div.top-header {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header div.top-header input {
+        margin: 0px;
+    }
+
+    header div.top-header p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .form {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 6px;
+    position: relative;
+    margin: 10px;
+    }
+
+    header div.top-header button {
+        right: 3%;
+    }
+
+    header div.logo,
+    div.top-header .form {
+    width: 33%;
+    }
+}
+
+
+/*Breakpoint para navegación en Desktop*/
+@media (min-width: 769px){
+    main section div.products article{
+        width: 22%;
+    }
+
+    main section article .description{
+        display: none;
+    }
+
+    main section article {
+        transition-duration: 600ms;
+    }
+
+    .footer-top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    main section article:hover .description{
+        display: block;
+    }
+
+    #footer-icon:hover {
+        color: #EAC926;
     }
 }
