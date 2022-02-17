@@ -284,7 +284,7 @@ h4.Footer-Oferta {
     border-radius: 6px;
     padding: 6px;
     width: 80%;
-    border: solid 1px #666;
+    border: none;
     margin: 10px 0px 10px 0px;
 }
 
@@ -301,6 +301,11 @@ button .button-register-log, .button-register-log:hover {
     cursor: pointer;
     background-color: #1259c3;
     color: white;
+}
+
+.button-register-log {
+    background-color: #1259c3;
+    color: #fff;
 }
 
 .register-form .enviar-cancelar-button .button-register-log{
