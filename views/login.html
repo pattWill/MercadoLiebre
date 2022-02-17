@@ -9,7 +9,6 @@
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <body>
         <header>
                     <div class="top-header">
                         <div class="logo"> 
@@ -44,17 +43,30 @@
         <section class="banner">
             <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
         </section>
-
+    <body>
 <main>
-    <main class="login">
+    <main>
+        <div class="login">
+            <h2 class="texto-registro">Inicia sesión</h2>
+                <div class="register-form">
         <form action="/" method="GET">
-            <input type="text" name="user" placeholder="Nombre de usuario">
-            <input type="password" name="pass" placeholder="Elegí tu contraseña">
-            <input type="submit" value="Enviar">
-
-            <div class="container" style="background-color:#f1f1f1">
+            <div>
+            <label for="">Nombre de usuario</label><br>
+            <input type="text" name="user" placeholder="Nombre de usuario"><br>
+            </div>
+            <div>
+            <label for="">Password</label><br>
+            <input type="password" name="pass" placeholder="Elegí tu contraseña"><br>
+            </div>
+            <div>
+            <input type="submit" class= "button-register-log" value="Enviar">
+            </div>
+            
+            <div class="forgot" style="text-align: center;">
                 <span class="psw">Forgot <a href="#">password?</a></span>
               </div>
+            </div>
+        </div>
         </form>
     </main>
 
@@ -64,19 +76,19 @@
 <footer>
     <div class="footer-contenedor">
     <article class = 'articleFooter'><i class="fas fa-credit-card" id = 'IconoFooter'></i>
-        <h3>Pagá con tarjeta o en efectivo</h3>
+        <h4 class="Footer-Oferta">Pagá con tarjeta o en efectivo</h4>
         <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
             puntos de pago. ¡Y siempre es seguro!</p>
     </article>
 
     <article class = 'articleFooter'> <i class="fas fa-gift" id = 'IconoFooter'></i>
-        <h3>Envío gratis desde $ 2.500</h3>
+        <h4 class="Footer-Oferta">Envío gratis desde $ 2.500</h4>
         <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
             productos. Es un beneficio de Mercado Puntos.</p>
     </article>
 
     <article class = 'articleFooter'><i class="fas fa-user-shield" id = 'IconoFooter'></i>
-        <h3>Seguridad, de principio a fin</h3>
+        <h4 class="Footer-Oferta">Seguridad, de principio a fin</h4>
         <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
             porque estás siempre protegid@.</p>
     </article>
@@ -85,6 +97,5 @@
         <p>Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
     </div>
 </footer>
-
 </body>
 </html>
