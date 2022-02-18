@@ -384,7 +384,8 @@ main {
     color: black;
     justify-content: center;
     align-items: center;
-    border: 2px solid #1259c3;;
+    border: 2px solid #1259c3;
+    margin-top: 295px;
 }
 main section .product {
     margin-bottom: 10px;
@@ -519,6 +520,10 @@ main section article .main-article{
 
 .register {
     margin-top: 210px;
+}
+
+.login {
+    margin-top: 350px;
 }
 }
 
