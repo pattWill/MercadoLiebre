@@ -528,3 +528,17 @@ main section article .main-article{
 }
 
 
+@media (min-width: 969px) {
+    .home-page { 
+        margin-top: 440px;
+    
+    }
+    
+    .register {
+        margin-top: 310px;
+    }
+    
+    .login {
+        margin-top: 450px;
+    }
+    }
