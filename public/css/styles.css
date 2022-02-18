@@ -31,6 +31,10 @@ header{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    position: fixed;
+    top: 0;
+    z-index: 110;
+    width: 100%;
 }
 
 header div.logo{
@@ -151,8 +155,16 @@ h3,
 
 section.banner img{
     width: 100%;
+    position: fixed;
+    top: 120px;
+    z-index: 100;
 }
 
+
+.home-page { 
+    margin-top: 260px;
+
+}
 main{
     width: 90%;
 }
@@ -493,6 +505,11 @@ main section article .main-article{
     align-content: space-around;
     align-items: center;
     padding: 10px;
+
+}
+.home-page { 
+    margin-top: 340px;
+
 }
 }
 
